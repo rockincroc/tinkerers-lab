@@ -1,0 +1,133 @@
+{% load static %}
+<!doctype html>
+<html>
+
+<head>
+    <!-- ADD TITLE META TAGS STYLESHEETS HERE -->
+    <!--  -->
+    <title>
+        {{title}} Tinkerers' Lab
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- BOOTSTRAP STARTS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP ENDS -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'tl/assets/css/feedback.css' %}">
+    <link rel="stylesheet" href="{% static 'tl/assets/css/team.css' %}">
+    <link rel="stylesheet" href="{% static 'tl/assets/css/gallery.css' %}">
+    <link rel="stylesheet" href="{% static 'tl/assets/css/style.css' %}">
+
+</head>
+
+<body style="">
+    <div class="row no-mobile" style="height:40px">
+        <div class="col-md-4 col-sm-0 col-xs-0"></div>
+        <div class="navbar row col-md-8 col-sm-2 col-xs-12" id="tub" style="z-index: 2;overflow-right: hidden;margin-left:auto;margin-right: auto">
+            <a href="/" class="skew-wrapper orange-outline navb navbarButtons col-xs-12 col-sm-12 col-md-2" style="box-shadow: 50px 30px 0px #BCC1C1">
+                <li class="unskew">Home</li>
+            </a>
+            <a href="/about" class="skew-wrapper orange-outline navb navbarButtons col-xs-12 col-sm-12 col-md-2" style="box-shadow: 46px 30px 0px #BCC1C1">
+                <li class="unskew">About</li>
+            </a>
+            <a href="/events" class="skew-wrapper navb orange-outline navbarButtons col-xs-12 col-sm-12 col-md-2" style="box-shadow: 42px 30px 0px #BCC1C1">
+                <li class="unskew">Events</li>
+            </a>
+            <a href="/gallery" class="skew-wrapper navb orange-outline navbarButtons col-xs-12 col-sm-12 col-md-2" style="box-shadow: 38px 30px 0px #BCC1C1">
+                <li class="unskew">Gallery</li>
+            </a>
+            <a href="/resources" class="skew-wrapper navb orange-outline navbarButtons col-xs-12 col-sm-12 col-md-2" style="box-shadow: 34px 30px 0px #BCC1C1">
+                <li class="unskew">Resources</li>
+            </a>
+            <a href="/contact" class="skew-wrapper navb orange-outline navbarButtons col-xs-12 col-sm-12 col-md-2" style="box-shadow: 30px 30px 0px #BCC1C1">
+                <li class="unskew">Contact</li>
+            </a>
+        </div>
+    </div>
+    <div class="row mobile" style="height:0;">
+        <nav class="navbar" style="">
+            <div class="container-fluid" style="padding-left: 40px;width:100%">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header" style="" >
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="padding-right: 0px;padding-left: 10px;background-color: #00cca5;">
+                        <span class="sr-only">Menu</span>
+                        <span class="icon-bar" style="display: inline-block;background-color: #00585C;"></span>
+                        <span class="icon-bar" style=";margin-top: 4.5px;margin-right: -22px;background-color: #00585C"></span>
+                        <span class="icon-bar" style="display: inline-block;margin-right: -22px;margin-top: 9px;background-color: #00585C"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="{% static 'tl/assets/images/sideC.png' %}" style='height:50px;position:absolute;top:0;left:30px'></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" style="text-align: center">
+                        <a href="/" class="skew-wrapper orange-outline navb navbarButtons col-xs-12 col-sm-12 col-md-2" style="opacity: 1;z-index: 4;background-color:#00cca5;width: 100%;box-shadow: 50px 30px 0px #BCC1C1">
+                            <li class="unskew">Home</li>
+                        </a>
+                        <a href="/about" class="skew-wrapper orange-outline navb navbarButtons col-xs-12 col-sm-12 col-md-2" style="opacity: 1;z-index: 4;background-color:#00cca5;width: 100%;box-shadow: 46px 30px 0px #BCC1C1">
+                            <li class="unskew">About</li>
+                        </a>
+                        <a href="/events" class="skew-wrapper navb orange-outline navbarButtons col-xs-12 col-sm-12 col-md-2" style="opacity: 1;z-index: 4;background-color:#00cca5;width: 100%;box-shadow: 42px 30px 0px #BCC1C1">
+                            <li class="unskew">Events</li>
+                        </a>
+                        <a href="/gallery" class="skew-wrapper navb orange-outline navbarButtons col-xs-12 col-sm-12 col-md-2" style="opacity: 1;z-index: 4;background-color:#00cca5;width: 100%;box-shadow: 38px 30px 0px #BCC1C1">
+                            <li class="unskew">Gallery</li>
+                        </a>
+                        <a href="/resources" class="skew-wrapper navb orange-outline navbarButtons col-xs-12 col-sm-12 col-md-2" style="opacity: 1;z-index: 4;background-color:#00cca5;width: 100%;box-shadow: 34px 30px 0px #BCC1C1">
+                            <li class="unskew">Resources</li>
+                        </a>
+                        <a href="/contact" class="skew-wrapper navb orange-outline navbarButtons col-xs-12 col-sm-12 col-md-2" style="opacity: 1;z-index: 4;background-color:#00cca5;width: 100%;box-shadow: 30px 30px 0px #BCC1C1">
+                            <li class="unskew">Contact</li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div class="row no-mobile" style="position: fixed;width: 100%">
+        <div class="col-md-5 no-mobile" style="; text-align: center;border-radius: 50%;">
+            <img src="{% static 'tl/assets/images/sideC.png' %}" style='width:85%;'>
+        </div>
+        <div class="col-md-7" style="margin-top:4%;text-align: center;border-radius: 50%;">
+            <div class="row">
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row mainBody" style="padding-top: 40px;width:100%">
+        <!-- CIRCULAR SECTION ENDS -->
+        <div class="col-sm-5 col-sm-12 col-xs-0"></div>
+        <!-- RHS STARTS HERE -->
+        <div class="col-md-7 col-sm-12 col-xs-0 " style="z-index: 1">
+            <div class="row">
+                <div class="col-md-12" style="text-align:justify;margin-top:75px;">
+                    {% block bodyContent %} {% endblock %}
+                </div>
+                
+            </div>
+        </div>
+        <!-- RHS ENDS -->
+    </div>
+    <br>&emsp;&emsp;
+    <br>&emsp;&emsp;
+    <br>&emsp;&emsp;
+    <br>&emsp;&emsp;
+    <br>&emsp;&emsp;
+    <br>&emsp;&emsp;
+    <br>&emsp;&emsp;
+    <div style="width:100%;padding-left:40px;letter-spacing: 5px;bottom: 0;margin-bottom: -30px">
+        &copy; 2017 Tinkerers' Laboratory.
+    </div>
+    <script type="text/javascript">
+    $(".menuButton").on("click", function() {
+        $(".mobile a").toggleClass("inactive")
+    });
+    </script>
+</body>
+
+</html>
