@@ -25,7 +25,7 @@ SECRET_KEY = '4o02*@**s_+*-$luhwpdc^5x6%q00u%997*ptull!=jv6ostdh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['139.59.16.176','127.0.0.1','localhost','tinkerers-lab.org']
+ALLOWED_HOSTS = ['206.189.140.168','139.59.16.176','127.0.0.1','localhost','tinkerers-lab.org']
 
 
 # Application definition
@@ -122,7 +122,8 @@ print "base dir path", BASE_DIR
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,"static/")
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
-STATICFILES_DIRS = (
-  os.path.join(BASE_DIR, 'static/'),
-)
+# Commenting out because collectstatic not working
+#STATICFILES_DIRS = (
+#  os.path.join(BASE_DIR, 'static/'),
+#)
 
