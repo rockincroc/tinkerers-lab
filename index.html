@@ -1,9 +1,205 @@
-<HTML>
-<HEAD> 
-<TITLE>Tinkerers Lab</TITLE> 
-<meta http-equiv="refresh" content="0;URL='/Home/home.html'" />
-</HEAD>
-<BODY>
-  <IMG SRC="loader.gif" style="display:block; margin-left:auto; margin-right:auto;"/>
-</BODY>
-</HTML>
+---
+layout: default
+---
+
+<div>
+					<h1>Why Tinker?</h1>
+					<p>A Tinkerer is someone who also enjoys experimenting. We, at Tinkerers’ Laboratory are always open for such people with an aim to grow innovators and thinkers, converting their creative ideas into actual engineering products. For them to do whatever they love to do, let them have limitless hands-on experience and spend hours tinkering without any worries.
+
+So if you are turned on by machines and technology, Tinkerers’ Lab is the place to be.</p>
+<!---Gallery--->
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/pic1.jpg" height ="500" width="100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/pic2.jpg" height ="500" width="100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/pic3.jpg" height ="500" width="100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/pic4.jpg" height ="500" width="100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/pic5.jpg" height ="500" width="100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/pic6.jpg" height ="500" width="100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)"><</a>
+  <a class="next" onclick="plusSlides(1)">></a>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<!---Gallery ends--->
+<hr>
+                    
+					<p>Tinkerers’ Lab is a work Space to get your hands dirty and make your ideas happen.
+					                                                                                      </p>
+																										  <hr>
+					<h1>Facilities @Tinkerers’ Lab?</h1>
+					<p>600 sq.ft. of space, wi-fi, work tables, rooftop, air conditioned lab and some space for work and fun.</p>
+					<h2>Automated Machines</h2>
+					<ul>
+						
+							<a href="3dprint.html"><img src="images/3dprint.jpg"width="300" height="250" alt="3D Printer"></a>
+							<a href="lasercut.html"><img src="images/lasercut.jpg"width="250" height="250" alt=""></a>
+							<a href="cnc.html"><img src="images/cnc.jpg" width="250" height="250"alt=""></a>						
+					</ul>
+					<h2>Electronics</h2>
+					<ul>
+						
+							<a href="dso.html"><img src="images/dso.jpg" alt=""width="300" height="250"></a>
+							<a href="funcgen.html"><img src="images/funcgen.jpg" alt=""width="300" height="250"></a>
+							<a href="soldering.html"><img src="images/soldering.jpg" alt=""width="300" height="250"></a>						
+					</ul>
+					<h2>Wood Working</h2>
+					<ul>
+						
+							<a href="powertool.html"><img src="images/powertool.jpg" alt=""width="250" height="250"></a>
+							<a href="lathe.html"><img src="images/lathe.jpg" alt=""width="250" height="250"></a>
+							<a href="milling.html"><img src="images/milling.jpg" alt=""width="250" height="250"></a>	
+                            <a href="drilling.html"><img src="images/drilling.jpg" alt=""width="250" height="250"></a>							
+					</ul>
+				</div>
+			
