@@ -69,7 +69,7 @@
 	#body.home .header div ul li a img, #body .header div .article ul li a img {
 		margin: 0 auto;
 	}
-	#body.home .body div h1, #body.home .body div p {
+	#body.home .body div h1,#body.home .body div h2, #body.home .body div p {
 		width: 100%;
 	}
 	#body.home .footer div ul li:first-child, #body.home .footer div ul li, #body .header div .sidebar ul li ul {
