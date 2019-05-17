@@ -6,14 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tinkerers’Lab Website</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
-	<link rel = "icon" href ="images/TL.jpg" type = "image/x-icon"> 
+	<link rel = "icon" href ="images/TL1.jpg" type = "image/x-icon"> 
 	<script src="js/mobile.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
 </head>
 <body>
 	<div id="page">
 		<div id="header">
 			<div>
+				<a href="index.html" class="logo"><img src="images/TL2.png" width="40" height="40" alt=""></a>		
 				<ul id="navigation">
 					<li>
 						<a href="index.html">Home</a>
@@ -74,16 +83,21 @@
 			</div>
 		</div>
 		<div id="body" class="home">
-			<div style="text-align:center" class="header">
+			<div style="text-align:center" class="header bounceIn animated">
 				
-					<h1 style="color:white;">Tinkerers' Lab</h1>
-					<img src="images/TL.jpg" alt="" width="200" height="200" align="middle" >
+					<h1 style="color:white";>Tinkerers' Lab</h1>
+					<img src="images/TL2.png" alt="" class="satellite" width="200" height="200" align="middle" >
+					
+					
 					
 					<h2 style="color:white;">Eat sleep tinker repeat</h2>
 					
 				
 			</div>
 			<div class="body">
+			    <script>  
+				AOS.init();
+				</script>
 				<div>
 				
 				
@@ -96,16 +110,16 @@
 				
 			</div>
 			</div>
-			<div class="footer">
+			<div class="footer" >
 				<div>
 					<ul>
-						<li>
+						<li data-aos="zoom-out-up">
 							<h1>FEATURED VIDEO</h1>
 							<video width="450" controls>  
-							<source src="images/tl_video.mp4" type="video/mp4">
+							<source src="https://www.youtube.com/watch?v=GK4npU-cQLo" >
 							</video>
 						</li>
-						<li>
+						<li data-aos="zoom-out-up">
 							<h1>Maps</h1>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.4039932541214!2d72.91458971490204!3d19.133785387054747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7f5e4ac7efd%3A0xd9d02f29b4617fb4!2sTinkerers&#39;+Laboratory!5e0!3m2!1sen!2sin!4v1552500479930" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</li>
@@ -125,7 +139,7 @@
 			</div>
 			<div class="footnote">
 				<div>
-					<p>&copy; 2019 BY Tinkerer's Lab | ALL RIGHTS RESERVED</p>
+					<p>&copy; 2019 BY Tinkerer's Lab | A Website Designed and Developed by TAYMANN</p>
 				</div>
 			</div>
 		</div>
