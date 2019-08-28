@@ -1,238 +1,505 @@
-<!doctype html>
-<!-- Website template by freewebsitetemplates.com -->
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tinkerers’Lab Website</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css">
-	<link rel = "icon" href ="images/TL1.jpg" type = "image/x-icon"> 
-	<script src="js/mobile.js" type="text/javascript"></script>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tinkerers' Lab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel = "icon" href ="images/TL1.jpg" type = "image/x-icon">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
 	
-</head>
-<body>
-	<div id="page">
-		<div id="header">
-			<div>
-				<a href="index.html" class="logo"><img src="images/TL2.png" width="40" height="40" alt=""></a>		
-				<ul id="navigation">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li class="menu">
-						<a>Resources</a>
-						<ul class="secondary">
-							<li>
-								<a href="3dprint.html">3D-Printer</a>
-							</li>
-							<li>
-								<a href="lasercut">Laser Cutter</a>
-							</li>
-							<li>
-								<a href="cnc.html">CNC Machine</a>
-							</li>
-							<li>
-								<a href="dso.html">DSO</a>
-							</li>
-							<li>
-								<a href="funcgen.html">Function Generator</a>
-							</li>
-							<li>
-								<a href="soldering.html">Soldering</a>
-							</li>
-							<li>
-								<a href="powertool.html">Power Tools</a>
-							</li>
-							<li>
-								<a href="milling.html">Milling</a>
-							</li>
-							<li>
-								<a href="lathe.html">Lathe</a>
-							</li>
-							<li>
-								<a href="drilling.html">Drilling</a>
-							</li>
-						</ul>
-					</li>
-					<li class="menu">
-						<a>Events</a>
-						<ul class="secondary">
-							<li>
-								<a href="tltalks.html">TL Talks</a>
-							</li>
-							<li>
-								<a href="htw.html">How Things Work</a>
-							</li>
-							<li>
-								<a href="itsp.html">ITSP</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div id="body" class="home">
-			<div style="text-align:center" class="header bounceIn animated">
-				
-					<h1 style="color:white";>Tinkerers' Lab</h1>
-					<img src="images/TL2.png" alt="" class="satellite" width="200" height="200" align="middle" >
-					
-					
-					
-					<h2 style="color:white;">Eat sleep tinker repeat</h2>
-					
-				
-			</div>
-			<div class="body">
-			    <script>  
-				AOS.init();
-				</script>
-				<div>
-				
-				
-				
-			<div>
-					<h1 class="header bounceIn animated">Why Tinker?</h1>
-					<p>A Tinkerer is someone who also enjoys experimenting. We, at Tinkerers’ Laboratory are always open for such people with an aim to grow innovators and thinkers, converting their creative ideas into actual engineering products. For them to do whatever they love to do, let them have limitless hands-on experience and spend hours tinkering without any worries.
+      <img src="images/TL2.png" width="40" height="40" alt=""><a class="navbar-brand" href="index.html">Tinkerers' Lab</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
 
-So if you are turned on by machines and technology, Tinkerers’ Lab is the place to be.</p>
-<!---Gallery--->
-<div class="container">
-  <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-							<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-							<li data-target="#myCarousel2" data-slide-to="1"></li>
-							<li data-target="#myCarousel2" data-slide-to="2"></li>
-							<li data-target="#myCarousel2" data-slide-to="3"></li>
-						</ol>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+		  <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+		  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+    
+ <div>  
+    <div class="hero-wrap">
+      <div class="overlay"></div>
+      <div class="circle-bg"></div>
+      <div class="circle-bg-2"></div>
+      <div class="container-fluid">
+        <div class="slider-text d-md-flex align-items-center" data-scrollax-parent="true">
 
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner">
-							<div class="item active">
-								<img src="images/pic1.jpg" alt="1" >
-								<div class="carousel-caption"></div>
-							</div>
-
-							<div class="item">
-								<img src="images/pic2.jpg" alt="2" >
-							</div>
-
-							<div class="item">
-								<img src="images/pic5.jpg" alt="3" >
-							</div>
-							<div class="item">
-								<img src="images/pic4.jpg" alt="4" >
-								<div class="carousel-caption">"How things Work Session on 3D printer"</div>
-								</div>
-							</div>
-
-							<!-- Left and right controls -->
-							<a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-								<span class="glyphicon glyphicon-chevron-left"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="right carousel-control" href="#myCarousel2" data-slide="next">
-								<span class="glyphicon glyphicon-chevron-right"></span>
-								<span class="sr-only">Next</span>
-							</a>
-					</div>
+          <div class="one-forth pr-md-4 ftco-animate align-self-md-center" data-scrollax=" properties: { translateY: '70%' }">
+          	<h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Think. <br> Tinker. <br> Transform.</h1>
+            <p class="mb-md-5 mb-sm-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">If it can be imagined, it can be made.</p>
+            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#" class="btn btn-primary px-4 py-3">Get started</a></p>
+          </div>
+          <div class="one-half align-self-md-end align-self-sm-center">
+          	<div class="slider-carousel owl-carousel">
+          		<div class="item">
+			          <img src="images/pic1.jpg" class="img-fluid img"alt="">
+		          </div>
+		          <div class="item">
+			          <img src="images/pic2.jpg" class="img-fluid img"alt="">
+		          </div>
+		          <div class="item">
+			          <img src="images/pic3.jpg" class="img-fluid img"alt="">
+		          </div>
+	          </div>
+          </div>
+        </div>
+      </div>
+    </div>
  
+  
+    <section class="ftco-section services-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Resources</span>
+            <h2 class="mb-4">Automated Machines</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img src="images/3dprint.png" height="80px" width="80px"></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">3D Printer</h3>
+                <p>A process for making a physical object from a three-dimensional digital model, typically by laying down many successive thin layers of a material.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img src="images/lasercut.png" height="80px" width="80px"></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Laser Cutter</h3>
+                <p>A prototyping and manufacturing tool used primarily by engineers, designers, and artists to cut and etch into flat material.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img src="images/cnc.png" height="80px" width="80px"></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">CNC Machines</h3>
+                <p>Computer numerical control(CNC) Machine uses numerical data to control a machine. CNC machines rely on a system of three linear and three rotational axes in order to calculate the motion and position of machine components and workpieces.</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+	    <section class="ftco-section services-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Wood & Metal Working</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img src="images/milling.png" height="80px" width="80px"></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Milling Machine</h3>
+                <p>Milling is the cutting operation that removes metal by feeding the work against a rotating, cutter having single or multiple cutting edges. Flat or curved surfaces of many shapes can be machined by milling with good finish and accuracy.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img src="images/lathe.png" height="80px" width="80px"></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Lathe Machine</h3>
+                <p>a machine tool that rotates a workpiece about an axis of rotation to perform various operations such as cutting, sanding, knurling, drilling, deformation, facing, and turning, with tools that are applied to the workpiece to create an object with symmetry about that axis.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img src="images/powertool.png" height="80px" width="80px"></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Power Tools</h3>
+                <p>A power tool is a tool that is actuated by an additional power source and mechanism other than the solely manual labor used with hand tools. The most common types of power tools use electric motors</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+	
+		    <section class="ftco-section services-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2 class="mb-4">Electrical Section</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img src="images/soldering.png" height="80px" width="80px"></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Soldering Station</h3>
+                <p>Soldering is one of the most fundamental skills needed to dabble in the world of electronics. The two go together like peas and carrots.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img src="images/waves.png" height="80px" width="80px"></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">DSO, Power Sources & AFG</h3>
+                <p>The main purpose of an oscilloscope is to graph an electrical signal as it varies over time. Most scopes produce a two-dimensional graph with time on the x-axis and voltage on the y-axis.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img src="images/chip.png" height="80px" width="80px"></div></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Electronics</h3>
+                <p>Tinkerers' lab has lots of cool electronics stuff like sensors, arduino boards, Raspbery pi, etc.</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+	
+
+
+    <section class="ftco-section bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Projects</span>
+            <h2 class="mb-4">Our Projects..</h2>
+          </div>
+        </div>
+    		<div class="row">
+			<div class="carousel-testimony owl-carousel ftco-owl">
+	        <div class="col-md-10 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+	            <h2 class="heading">ITSP</h2>
+	            <span class="excerpt d-block">EMO TV</span>
+	            
+	            <h3 class="heading-2 mb-5">As the name suggests, EmoTv is capable of interacting with a person and determine his current mood. </h3>
+	            <a href="#" class="btn btn-primary d-block px-3 py-3 mb-4">Read More</a>
+	            
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-md-10 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+	            <h2 class="heading">Technovation</h2>
+	            <span class="excerpt d-block">CNC tube processing machine</span>
+	            
+	            <h3 class="heading-2 mb-5">A machine for steel structure fabrication industry, to perform multiple machining operations like cutting, notching, holes and slotting at a time. </h3>
+	            <a href="#" class="btn btn-primary d-block px-3 py-3 mb-4">Read More</a>
+	            
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-md-10 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+	            <h2 class="heading">ITSP</h2>
+	            <span class="excerpt d-block">H.A.N.C.O</span>
+	            
+	            <h3 class="heading-2 mb-5">H.A.N.C.O. is an IoT device developed with a vision to become a dedicated personal AI assistant. </h3>
+	            <a href="#" class="btn btn-primary d-block px-3 py-3 mb-4">Read More</a>
+	            
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-md-10 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+	            <h2 class="heading">ITSP</h2>
+	            <span class="excerpt d-block">OPTIKA</span>
+	            
+	            <h3 class="heading-2 mb-5">The project Optika makes surrounding of a visually impaired person more friendly by installing a lot of very helpful features on a raspberry pi. </h3>
+	            <a href="#" class="btn btn-primary d-block px-3 py-3 mb-4">Read More</a>
+	            </div>
+	          </div>
+	        </div>
+			<div class="col-md-10 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+	            <h2 class="heading">Technovation</h2>
+	            <span class="excerpt d-block">Hot Wire CNC (RC plane wing cutter)</span>
+	            
+	            <h3 class="heading-2 mb-5">This device cuts a desired airfoil shape wing out of the thermocol block and is fully automatic. User will have to provide the airfoil data file.</h3>
+	            <a href="#" class="btn btn-primary d-block px-3 py-3 mb-4">Read More</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-md-10 ftco-animate">
+	          <div class="block-7">
+	            <div class="text-center">
+	            <h2 class="heading">ITSP</h2>
+	            <span class="excerpt d-block">OPTIKA</span>
+	            
+	            <h3 class="heading-2 mb-5">The project Optika makes surrounding of a visually impaired person more friendly by installing a lot of very helpful features on a raspberry pi. </h3>
+	            <a href="#" class="btn btn-primary d-block px-3 py-3 mb-4">Read More</a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_1.jpg);">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+            <h2 class="mb-4">Some fun facts</h2>
+            <span class="subheading"></span>
+          </div>
+        </div>
+    		<div class="row justify-content-center">
+    			<div class="col-md-10">
+		    		<div class="row">
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="1500">0</strong>
+		                <span>sq. ft. of space</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="100">+</strong><strong>+</strong>
+		                <span>Projects Made every year</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="50000">+</strong><strong>+</strong>
+		                <span>man-hours of work done</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="1000">0</strong><strong>+</strong>
+		                <span>Students work in this Lab yearly</span>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">testimonials</span>
+            <h2 class="mb-4">From the pen of our Alumni</h2>
+           </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(images/ashima.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">It is a platform where they can transform their idea into product.
+Other labs have many issues like permissions but this is a lab for students run by
+students. Everything is available there so that they come with an idea and go out with a product.
+Initially, thought that they didn't want to push students to get a product and let TL use as a
+space and eventually after few years products will come out of tl.</p>
+                    <p class="name">Ashima Mittal</p>
+                    <span class="position">STAB O.C.2013-14</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(images/chirag.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Tinkerers’ Lab (TL) has played a very pivotal role in my life@IITB. I think idea of TL is so awesome. Working in TL fulfilled the conception I had while
+preparing for JEE, about how engineering at the Indian Institute of Technology ought be.
+Inspired, I believed that I was uniquely positioned to lead TL.
+
+</p>
+                    <p class="name">Chirag Shetty</p>
+                    <span class="position"> STAB OC 2015-16</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(images/Umang.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5"></p>
+                    <p class="name">Umang Chhaparia</p>
+                    <span class="position">TL Manager 2015-16</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(images/hemant.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Our counterparts in US and Europe learn to build and tinker with systems from an early age. That gives them an edge when we compete with them in our professional lives. Innovators like Steve Jobs of Apple and Mark Zuckerberg of Facebook developed their innovative ideas while experimenting as students, whereas we at IIT usually learn how to excel within confined bounds of curriculum and examination system. I believe that to be relevant in technology game, IITs have to meet the challenge of how to motivate their students to build things, to take initiatives and to learn to innovate by building and Tinkerers' Lab(TL) will play an important role in that." 
+</p>
+                    <p class="name">Mr. Hemant Kanakia</p>
+                    <span class="position">a 1975 batch alumnus of the Institute and a successful entrepreneur based in USA</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </div>
+    
+   
 
 
-<!---Gallery ends--->
-<hr>
-                    
-					<p>Tinkerers’ Lab is a work Space to get your hands dirty and make your ideas happen.
-					                                                                                      </p>
-																										  <hr>
-					
-					<h1 class="header bounceIn animated">Facilities @Tinkerers’ Lab?</h1>
-					<p>600 sq.ft. of space, wi-fi, work tables, rooftop, air conditioned lab and some space for work and fun.</p>
-					<div data-aos="fade-up">
-					<h2>Automated Machines</h2>
-					<ul>
-						
-							<a href="3dprint.html"><img src="images/3dprint.jpg"width="300" height="250" alt="3D Printer"></a>
-							<a href="lasercut.html"><img src="images/lasercut.jpg"width="250" height="250" alt=""></a>
-							<a href="cnc.html"><img src="images/cnc.jpg" width="250" height="250"alt=""></a>						
-					</ul>
-					</div>
-					<div data-aos="fade-up">
-					<h2>Electronics</h2>
-					<ul>
-						
-							<a href="dso.html"><img src="images/dso.jpg" alt=""width="300" height="250"></a>
-							<a href="funcgen.html"><img src="images/funcgen.jpg" alt=""width="300" height="250"></a>
-							<a href="soldering.html"><img src="images/soldering.jpg" alt=""width="300" height="250"></a>						
-					</ul>
-					</div>
-					<div data-aos="fade-up">
-					<h2>Wood Working</h2>
-					<ul>
-						
-							<a href="powertool.html"><img src="images/powertool.jpg" alt=""width="250" height="250"></a>
-							<a href="lathe.html"><img src="images/lathe.jpg" alt=""width="250" height="250"></a>
-							<a href="milling.html"><img src="images/milling.jpg" alt=""width="250" height="250"></a>	
-                            <a href="drilling.html"><img src="images/drilling.jpg" alt=""width="250" height="250"></a>							
-					</ul>
-					</div>
-				</div>
-			
-			
-			
-			
-			
-				
-			</div>
-			</div>
-			<div class="footer" >
-				<div>
-					<ul>
-						<li data-aos="zoom-out-up">
-							<h1>FEATURED VIDEO</h1>
-							<video width="450" controls>  
-							<source src="https://www.youtube.com/watch?v=GK4npU-cQLo" >
-							</video>
-						</li>
-						<li data-aos="zoom-out-up">
-							<h1>Maps</h1>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.4039932541214!2d72.91458971490204!3d19.133785387054747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7f5e4ac7efd%3A0xd9d02f29b4617fb4!2sTinkerers&#39;+Laboratory!5e0!3m2!1sen!2sin!4v1552500479930" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div id="footer">
-			<div class="connect">
-				<div>
-					<h1>FOLLOW OUR  MISSIONS ON</h1>
-					<div>
-						<a href="https://www.facebook.com/tinkererIITB/" class="facebook">facebook</a>
-						<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
-					</div>
-				</div>
-			</div>
-			<div class="footnote">
-				<div>
-					<p>&copy; 2019 BY Tinkerer's Lab | A Website Designed and Developed by TAYMANN</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+
+
+
+
+
+
+
+
+
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Tinkerers' Lab</h2>
+             
+              <p class="mt-4"><a href="contact.html" class="btn btn-primary p-3">Get in touch</a></p>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Navigational</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                <li><a href="events.html" class="py-2 d-block">Events</a></li>
+                <li><a href="about.html" class="py-2 d-block">About</a></li>
+                <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">N5 Bay, Infinity Corridor, Nr. Mechanical Eng. Dept., IITB</span></li>
+	                <li><a href="tel://022 2576 4381"><span class="icon icon-phone"></span><span class="text">022 2576 4381</span></a></li>
+	                <li><a href="mailto:tinkererslaboratory@gmail.com"><span class="icon icon-envelope"></span><span class="text">tinkererslaboratory@gmail.com</span></a></li>
+	                <li><span class="icon icon-clock-o"></span><span class="text"> 24*7</span></li>
+	              </ul>
+	            </div>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://www.linkedin.com/company/tinkerers-lab/"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/pg/tinkererIITB"><span class="icon-facebook"></span></a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart" aria-hidden="true"></i> by <a target="_blank"> Manan Tayal</a>
+  </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+   
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>
-				
-			
