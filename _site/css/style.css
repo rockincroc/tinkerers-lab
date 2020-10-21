@@ -9212,3 +9212,8 @@ span.position {
         max-height: 235px!important;
         border-radius: 160px;
     }
+
+.tab-middle {
+    display: flex;
+justify-content: center;
+}
